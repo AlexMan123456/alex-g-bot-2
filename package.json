@@ -31,7 +31,8 @@
     "pull-update-script-changes": "git reset --hard && git pull origin main && chmod +x ./update.sh",
     "start": "tsx src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "update-bot": "./update.sh"
+    "update-bot": "./update.sh",
+    "update-dependencies": "pnpm update --latest && pnpm update"
   },
   "dependencies": {
     "@alextheman/utility": "^3.4.1",
