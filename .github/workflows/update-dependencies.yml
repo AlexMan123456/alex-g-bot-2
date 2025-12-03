@@ -40,6 +40,9 @@ jobs:
       run: |
         pnpm update --latest
         pnpm update
+    
+    - name: Re-install dependencies to sync lockfile
+      run: pnpm install --no-frozen-lockfile
 
     - name: Update GitHub Actions
       run: pnpx actions-up -y
