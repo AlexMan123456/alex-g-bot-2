@@ -37,7 +37,9 @@ jobs:
       run: corepack enable && corepack prepare pnpm@latest --activate
 
     - name: Update JavaScript dependencies
-      run: pnpm update --latest && pnpm update
+      run: |
+        pnpm update --latest
+        pnpm update
 
     - name: Update GitHub Actions
       run: pnpx actions-up -y
