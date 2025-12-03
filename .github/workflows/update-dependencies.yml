@@ -37,9 +37,7 @@ jobs:
       run: corepack enable && corepack prepare pnpm@latest --activate
 
     - name: Update JavaScript dependencies
-      run: |
-        pnpm update --latest
-        pnpm update
+      run: pnpm run update-dependencies
     
     - name: Re-install dependencies to sync lockfile
       run: pnpm install --no-frozen-lockfile
