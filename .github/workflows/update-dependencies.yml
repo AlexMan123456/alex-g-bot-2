@@ -28,19 +28,20 @@ jobs:
       with:
         node-version: 22
 
+    - name: Use PNPM
+      uses: pnpm/action-setup@41ff72655975bd51cab0327fa583b6e92b6d3061 # v4.2.0
+      with:
+        run_install: false
+  
     - name: Setup GitHub user
       run: |
         git config --global user.name "AlexUpBot"
         git config --global user.email "alexupbot@bot.com"
 
-    - name: Use latest PNPM version
-      run: corepack enable && corepack prepare pnpm@latest --activate
-
     - name: Update JavaScript dependencies
-      run: pnpm run update-dependencies
-    
-    - name: Re-install dependencies to sync lockfile
-      run: pnpm install --no-frozen-lockfile
+      run: |
+        pnpm run update-dependencies
+        pnpm install --no-frozen-lockfile
 
     - name: Update GitHub Actions
       run: pnpx actions-up -y
