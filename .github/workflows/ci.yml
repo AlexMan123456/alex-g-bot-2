@@ -27,7 +27,7 @@ jobs:
         run: git fetch --unshallow origin main
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
       
       - name: Generate Prisma client
         run: pnpm run generate
