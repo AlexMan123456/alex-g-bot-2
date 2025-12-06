@@ -63,6 +63,10 @@
     "overrides": {
       "prisma": ">=6.19.0 <7",
       "@prisma/client": ">=6.19.0 <7"
-    }
+    },
+    "onlyBuiltDependencies": [
+      "@sapphire/type",
+      "esbuild"
+    ]
   }
 }

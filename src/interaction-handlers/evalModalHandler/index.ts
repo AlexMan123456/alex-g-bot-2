@@ -1,6 +1,6 @@
 import type { ModalSubmitInteraction } from "discord.js";
 
-import { parseIntStrict, stringToBoolean } from "@alextheman/utility";
+import { parseBoolean, parseIntStrict } from "@alextheman/utility";
 import { InteractionHandler, InteractionHandlerTypes } from "@sapphire/framework";
 import { MessageFlags } from "discord.js";
 
@@ -32,7 +32,7 @@ class EvalModalHandler extends InteractionHandler {
     const [showEnvironmentVariablesRaw] = interaction.fields.getStringSelectValues(
       "showEnvironmentVariables",
     );
-    const showEnvironmentVariables = stringToBoolean(showEnvironmentVariablesRaw);
+    const showEnvironmentVariables = parseBoolean(showEnvironmentVariablesRaw);
 
     if (code.includes("process.env") && !showEnvironmentVariables) {
       const [_, __, attemptedToAccess] = code.split(".");
