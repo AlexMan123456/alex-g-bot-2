@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@alextheman/utility": "^3.4.1",
-    "@prisma/client": "^6.19.0",
+    "@prisma/client": "^7.1.0",
     "@sapphire/framework": "^5.4.0",
     "@sapphire/plugin-subcommands": "^7.0.1",
     "@sapphire/type": "^2.6.0",
@@ -46,6 +46,7 @@
   },
   "devDependencies": {
     "@alextheman/eslint-plugin": "^4.3.0",
+    "@prisma/adapter-pg": "^7.1.0",
     "@types/common-tags": "^1.8.4",
     "@types/node": "^24.10.1",
     "dotenv": "^17.2.3",
@@ -53,20 +54,18 @@
     "husky": "^9.1.7",
     "nodemon": "^3.1.11",
     "prettier": "^3.7.4",
-    "prisma": "^6.19.0",
+    "prisma": "^7.1.0",
     "ts-node": "^10.9.2",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   },
   "packageManager": "pnpm@10.24.0+sha512.01ff8ae71b4419903b65c60fb2dc9d34cf8bb6e06d03bde112ef38f7a34d6904c424ba66bea5cdcf12890230bf39f9580473140ed9c946fef328b6e5238a345a",
   "pnpm": {
-    "overrides": {
-      "prisma": ">=6.19.0 <7",
-      "@prisma/client": ">=6.19.0 <7"
-    },
     "onlyBuiltDependencies": [
+      "@prisma/engines",
       "@sapphire/type",
-      "esbuild"
+      "esbuild",
+      "prisma"
     ]
   }
 }
