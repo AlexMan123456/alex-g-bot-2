@@ -2,7 +2,7 @@ import type { ChatInputCommandInteraction } from "discord.js";
 
 import { EmbedBuilder } from "discord.js";
 
-import util from "util";
+import util from "node:util";
 
 import { getGuildById } from "src/database-helpers/guilds";
 

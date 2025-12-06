@@ -9,14 +9,6 @@ class PingCommand extends Command {
     super(context, { ...options });
   }
 
-  public override registerApplicationCommands(
-    registry: ApplicationCommandRegistry,
-  ): Awaitable<void> {
-    registry.registerChatInputCommand((builder) => {
-      return builder.setName("ping").setDescription("Replies with pong");
-    });
-  }
-
   public override async chatInputRun(interaction: ChatInputCommandInteraction): Promise<void> {
     const pingResponse = await interaction.reply({ content: "Ping?", withResponse: true });
 
@@ -44,6 +36,13 @@ class PingCommand extends Command {
     interaction.editReply({
       content: null,
       embeds: [embed],
+    });
+  }
+  public override registerApplicationCommands(
+    registry: ApplicationCommandRegistry,
+  ): Awaitable<void> {
+    registry.registerChatInputCommand((builder) => {
+      return builder.setName("ping").setDescription("Replies with pong");
     });
   }
 }

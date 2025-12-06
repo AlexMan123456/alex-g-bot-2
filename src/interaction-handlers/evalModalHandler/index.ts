@@ -24,7 +24,6 @@ class EvalModalHandler extends InteractionHandler {
     }
     return this.none();
   }
-
   public override async run(interaction: ModalSubmitInteraction) {
     const code = interaction.fields.getTextInputValue("code");
     const [lineSpacing] = interaction.fields.getStringSelectValues("lineSpacing");
