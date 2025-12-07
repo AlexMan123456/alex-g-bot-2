@@ -7,6 +7,7 @@
   "type": "module",
   "main": "src/index.ts",
   "scripts": {
+    "build": "exit 0",
     "change-major": "pnpm version major -m \"Change version number to v%s\"",
     "change-minor": "pnpm version minor -m \"Change version number to v%s\"",
     "change-patch": "pnpm version patch -m \"Change version number to v%s\"",
