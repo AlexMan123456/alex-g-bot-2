@@ -66,8 +66,11 @@
       "@prisma/client": ">=6.19.0 <7"
     },
     "onlyBuiltDependencies": [
+      "@prisma/client",
+      "@prisma/engines",
       "@sapphire/type",
-      "esbuild"
+      "esbuild",
+      "prisma"
     ]
   }
 }
