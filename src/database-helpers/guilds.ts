@@ -1,5 +1,5 @@
 import type { Guild } from "discord.js";
-import type { Guild as PrismaGuild } from "generated/prisma";
+import type { GuildModel as PrismaGuild } from "generated/prisma/models/Guild";
 
 import database from "prisma/connection";
 
