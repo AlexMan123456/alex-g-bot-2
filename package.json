@@ -70,7 +70,8 @@
       "@prisma/engines",
       "@sapphire/type",
       "esbuild",
-      "prisma"
+      "prisma",
+      "unrs-resolver"
     ]
   }
 }
