@@ -1,7 +1,7 @@
 ## General workflow summary
 
 1. Create the skeleton of the feature.
-2. Implement the feature, using the tests to guide you.
+2. Implement the feature.
 3. Commit the feature by itself.
 4. If intending to release, create a release note, carefully deciding if it's a major, minor, or patch release (if adding to a release that is about to happen, add to the existing note)
 5. Commit the release note separately from the feature.
