@@ -39,7 +39,7 @@ importers:
     devDependencies:
       '@alextheman/eslint-plugin':
         specifier: ^4.9.2
-        version: 4.9.2(d85839520b1626c4fd2e5f701edd3753)
+        version: 4.9.2(dfc29eef0484e8b08bb625c4a1633b90)
       '@types/common-tags':
         specifier: ^1.8.4
         version: 1.8.4
@@ -52,6 +52,9 @@ importers:
       eslint:
         specifier: ^9.39.2
         version: 9.39.2(jiti@2.6.1)
+      eslint-plugin-perfectionist:
+        specifier: ^5.0.0
+        version: 5.0.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -1434,9 +1437,9 @@ packages:
       eslint: '>=8.0.0'
       jsonc-eslint-parser: ^2.0.0
 
-  eslint-plugin-perfectionist@4.15.1:
-    resolution: {integrity: sha512-MHF0cBoOG0XyBf7G0EAFCuJJu4I18wy0zAoT1OHfx2o6EOx1EFTIzr2HGeuZa1kDcusoX0xJ9V7oZmaeFd773Q==}
-    engines: {node: ^18.0.0 || >=20.0.0}
+  eslint-plugin-perfectionist@5.0.0:
+    resolution: {integrity: sha512-a8PgR2AgCxEVmpIU+vd3nsYWTa8LfyXXJ0gXkPoj1gVW/sfj23BSTtNFBexGysTRNDwuMGLSzejHY+S3qj0EDg==}
+    engines: {node: ^20.0.0 || >=22.0.0}
     peerDependencies:
       eslint: '>=8.45.0'
 
@@ -2778,7 +2781,7 @@ packages:
 
 snapshots:
 
-  '@alextheman/eslint-plugin@4.9.2(d85839520b1626c4fd2e5f701edd3753)':
+  '@alextheman/eslint-plugin@4.9.2(dfc29eef0484e8b08bb625c4a1633b90)':
     dependencies:
       '@alextheman/utility': 4.0.0
       '@eslint/js': 9.39.2
@@ -2791,7 +2794,7 @@ snapshots:
       eslint-plugin-jsdoc: 61.5.0(eslint@9.39.2(jiti@2.6.1))
       eslint-plugin-jsx-a11y: 6.10.2(eslint@9.39.2(jiti@2.6.1))
       eslint-plugin-package-json: 0.74.0(@types/estree@1.0.8)(eslint@9.39.2(jiti@2.6.1))(jsonc-eslint-parser@2.4.1)
-      eslint-plugin-perfectionist: 4.15.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
+      eslint-plugin-perfectionist: 5.0.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
       eslint-plugin-prettier: 5.5.4(eslint-config-prettier@10.1.8(eslint@9.39.2(jiti@2.6.1)))(eslint@9.39.2(jiti@2.6.1))(prettier@3.7.4)
       eslint-plugin-react: 7.37.5(eslint@9.39.2(jiti@2.6.1))
       eslint-plugin-react-hooks: 7.0.1(eslint@9.39.2(jiti@2.6.1))
@@ -4277,9 +4280,8 @@ snapshots:
     transitivePeerDependencies:
       - '@types/estree'
 
-  eslint-plugin-perfectionist@4.15.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3):
+  eslint-plugin-perfectionist@5.0.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3):
     dependencies:
-      '@typescript-eslint/types': 8.50.0
       '@typescript-eslint/utils': 8.50.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
       eslint: 9.39.2(jiti@2.6.1)
       natural-orderby: 5.0.0
