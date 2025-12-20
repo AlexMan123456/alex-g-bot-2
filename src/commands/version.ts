@@ -3,6 +3,7 @@ import type { ChatInputCommandInteraction } from "discord.js";
 
 import { Command } from "@sapphire/framework";
 import { stripIndent } from "common-tags";
+
 import { version } from "package.json";
 
 class VersionCommand extends Command {
