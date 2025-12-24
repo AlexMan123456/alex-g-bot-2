@@ -11,19 +11,18 @@ class VersionCommand extends Command {
     super(context, { ...options });
   }
 
+  public override async chatInputRun(interaction: ChatInputCommandInteraction): Promise<void> {
+    await interaction.reply(stripIndent`
+      Current version: ${version}
+      Last updated: ${process.env.LAST_UPDATED ? `<t:${new Date(process.env.LAST_UPDATED).getTime() / 1000}:f>` : "Unknown"}
+      `);
+  }
   public override registerApplicationCommands(
     registry: ApplicationCommandRegistry,
   ): Awaitable<void> {
     registry.registerChatInputCommand((builder) => {
       return builder.setName("version").setDescription("Get the current version number of the bot");
     });
-  }
-
-  public override async chatInputRun(interaction: ChatInputCommandInteraction): Promise<void> {
-    await interaction.reply(stripIndent`
-      Current version: ${version}
-      Last updated: ${process.env.LAST_UPDATED ? `<t:${new Date(process.env.LAST_UPDATED).getTime() / 1000}:f>` : "Unknown"}
-      `);
   }
 }
 

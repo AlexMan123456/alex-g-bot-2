@@ -36,8 +36,10 @@
     "update-dependencies": "pnpm update --latest && pnpm update"
   },
   "dependencies": {
-    "@alextheman/utility": "^4.0.0",
-    "@prisma/client": "^6.19.1",
+    "@alextheman/utility": "^4.3.3",
+    "@prisma/adapter-pg": "^7.2.0",
+    "@prisma/client": "^7.2.0",
+    "@prisma/extension-accelerate": "^3.0.1",
     "@sapphire/framework": "^5.4.0",
     "@sapphire/plugin-subcommands": "^7.0.1",
     "@sapphire/type": "^2.6.0",
@@ -46,27 +48,24 @@
     "zod": "^4.2.1"
   },
   "devDependencies": {
-    "@alextheman/eslint-plugin": "^4.9.2",
+    "@alextheman/eslint-plugin": "^5.2.2",
     "@types/common-tags": "^1.8.4",
     "@types/node": "^25.0.3",
+    "@types/pg": "^8.16.0",
     "dotenv": "^17.2.3",
     "eslint": "^9.39.2",
     "eslint-plugin-package-json": "^0.85.0",
-    "eslint-plugin-perfectionist": "^5.0.0",
+    "eslint-plugin-perfectionist": "^5.1.0",
     "husky": "^9.1.7",
     "nodemon": "^3.1.11",
     "prettier": "^3.7.4",
-    "prisma": "^6.19.1",
+    "prisma": "^7.2.0",
     "ts-node": "^10.9.2",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   },
   "packageManager": "pnpm@10.26.1+sha512.664074abc367d2c9324fdc18037097ce0a8f126034160f709928e9e9f95d98714347044e5c3164d65bd5da6c59c6be362b107546292a8eecb7999196e5ce58fa",
   "pnpm": {
-    "overrides": {
-      "prisma": ">=6.19.0 <7",
-      "@prisma/client": ">=6.19.0 <7"
-    },
     "onlyBuiltDependencies": [
       "@prisma/client",
       "@prisma/engines",
