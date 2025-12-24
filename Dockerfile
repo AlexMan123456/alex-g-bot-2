@@ -7,6 +7,7 @@ COPY package.json .
 COPY pnpm-lock.yaml .
 
 RUN ["pnpm", "install"]
+RUN ["nvm", "install", "22.10.0"]
 
 COPY tsconfig.json .
 COPY .env .
