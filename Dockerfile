@@ -1,4 +1,4 @@
-FROM guergeiro/pnpm:22-10
+FROM node:24.5.0
 
 WORKDIR /opt/bot
 
@@ -6,6 +6,7 @@ WORKDIR /opt/bot
 COPY package.json .
 COPY pnpm-lock.yaml .
 
+RUN ["npm", "install", "--global", "pnpm@latest"]
 RUN ["pnpm", "install"]
 
 COPY tsconfig.json .
