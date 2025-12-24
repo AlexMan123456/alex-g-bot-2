@@ -31,12 +31,7 @@ jobs:
           # Maps tcp port 5432 on service container to the host
           - 5432:5432
     env:
-      DATABASE_URL: ${{ secrets.DATABASE_URL }}
-
-    strategy:
-      matrix:
-        node-version: [22.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+      DATABASE_URL: postgresql://postgres:prisma@localhost:5432/tests?schema=public
 
     steps:
     - name: Checkout the repository
@@ -47,14 +42,14 @@ jobs:
       with:
         run_install: false
 
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js
       uses: actions/setup-node@395ad3262231945c25e8478fd5baf05154b1d79f # v6.1.0
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 22
         cache: 'pnpm'
 
     - name: Initialise environment variables
-      run: echo DATABASE_URL="${{ secrets.DATABASE_URL }}" >> ./.env
+      run: echo DATABASE_URL="postgresql://postgres:prisma@localhost:5432/tests?schema=public" >> ./.env
     
     - name: Install dependencies
       run: pnpm install
