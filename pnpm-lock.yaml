@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@alextheman/utility':
-        specifier: ^4.3.3
-        version: 4.3.3
+        specifier: ^4.3.5
+        version: 4.3.5
       '@prisma/adapter-pg':
         specifier: ^7.2.0
         version: 7.2.0
@@ -21,8 +21,8 @@ importers:
         specifier: ^3.0.1
         version: 3.0.1(@prisma/client@7.2.0(prisma@7.2.0(@types/react@19.2.7)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.3))(typescript@5.9.3))
       '@sapphire/framework':
-        specifier: ^5.4.0
-        version: 5.4.0
+        specifier: ^5.5.0
+        version: 5.5.0
       '@sapphire/plugin-subcommands':
         specifier: ^7.0.1
         version: 7.0.1
@@ -40,8 +40,8 @@ importers:
         version: 4.2.1
     devDependencies:
       '@alextheman/eslint-plugin':
-        specifier: ^5.2.2
-        version: 5.2.2(0183805010493e74adb74e9d4919ae98)
+        specifier: ^5.4.0
+        version: 5.4.0(0183805010493e74adb74e9d4919ae98)
       '@types/common-tags':
         specifier: ^1.8.4
         version: 1.8.4
@@ -87,8 +87,8 @@ importers:
 
 packages:
 
-  '@alextheman/eslint-plugin@5.2.2':
-    resolution: {integrity: sha512-pwGkJQ2Zw8i1tkG90hRlZDIakuJeMZCzVmrgmfh3Ec3vHmVTmPAV25kp2J/Y95wIDPWx4l1RZs8JxQACTJkcVA==}
+  '@alextheman/eslint-plugin@5.4.0':
+    resolution: {integrity: sha512-EWYOEhG8Qi2Q80UibbpVrYeyEZ6B0r3AEN20nC4Ri0SpYlcLZ4g2//kWLyUJpWIn74yVFQ7g93Si/JqKgkvbtg==}
     peerDependencies:
       '@eslint/js': '>=9.0.0'
       eslint: '>=9.0.0'
@@ -106,13 +106,13 @@ packages:
       eslint-plugin-react-refresh: '>=0.4.0'
       typedoc: '>=0.28.15'
       typedoc-plugin-markdown: '>=4.9.0'
-      typedoc-rhineai-theme: ^1.2.0
+      typedoc-rhineai-theme: '>=1.2.0'
       typescript-eslint: '>=8.0.0'
       vite-tsconfig-paths: '>=5.1.4'
       vitest: '>=4.0.13'
 
-  '@alextheman/utility@4.3.3':
-    resolution: {integrity: sha512-EppYU4zYmcvsp4uWfwTsOExBqDpAJ3AhIinLjdgLh2MJw9xjq0iQRgn+Tqd/qN9Wir273N2sY7AFDH6GeLGULg==}
+  '@alextheman/utility@4.3.5':
+    resolution: {integrity: sha512-NoceLC4u/W7iehxefvV3hAiHmc+efOvU+RHGTfSicqcP0uvgABC2hoYPLPgGihd83G3aAdtJ5xdewvgtmTQeCw==}
     engines: {node: '>=22.0.0'}
 
   '@altano/repository-tools@2.0.1':
@@ -710,8 +710,8 @@ packages:
     resolution: {integrity: sha512-LxjOAFXz81WmrI8XX9YaVcAZDjQj/1p78lZCvkAWZB1nphOwz/D0dU3CBejmhOWx5dO5CszTkLJMNR0xuCK+Zg==}
     engines: {node: '>=v14.0.0', npm: '>=7.0.0'}
 
-  '@sapphire/framework@5.4.0':
-    resolution: {integrity: sha512-Gf0Ui5tOG1lRRf6Gpd/gpUDkAIMZxFXYOzq0X5kMcXRNWiX1B6iIUkyXrzCLaNunzqWRKe6x4UxzRewN5ktNWg==}
+  '@sapphire/framework@5.5.0':
+    resolution: {integrity: sha512-jC+zS8yR/MtJaTFEQutBBWj7Scuvny4d0adtQ3s0OCFWe3rUqNfENomBG3P4tsQ/kRF7L3WCqucyLV8ywG24hw==}
     engines: {node: '>=v18', npm: '>=7'}
 
   '@sapphire/lexure@1.1.12':
@@ -3166,9 +3166,9 @@ packages:
 
 snapshots:
 
-  '@alextheman/eslint-plugin@5.2.2(0183805010493e74adb74e9d4919ae98)':
+  '@alextheman/eslint-plugin@5.4.0(0183805010493e74adb74e9d4919ae98)':
     dependencies:
-      '@alextheman/utility': 4.3.3
+      '@alextheman/utility': 4.3.5
       '@eslint/js': 9.39.2
       '@typescript-eslint/utils': 8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
       common-tags: 1.8.2
@@ -3196,7 +3196,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@alextheman/utility@4.3.3':
+  '@alextheman/utility@4.3.5':
     dependencies:
       zod: 4.2.1
 
@@ -3784,7 +3784,7 @@ snapshots:
 
   '@sapphire/duration@1.2.0': {}
 
-  '@sapphire/framework@5.4.0':
+  '@sapphire/framework@5.5.0':
     dependencies:
       '@discordjs/builders': 1.13.1
       '@sapphire/discord-utilities': 4.0.0
